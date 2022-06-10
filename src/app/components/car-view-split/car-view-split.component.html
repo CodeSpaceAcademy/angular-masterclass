@@ -1,0 +1,6 @@
+<p>car-view-split works!</p>
+<div *ngIf="receivedUser">
+  {{receivedUser | json}}
+</div>
+
+<button type="button" class="btn btn-primary" (click)="emitEvent()"> Say hello from child</button>

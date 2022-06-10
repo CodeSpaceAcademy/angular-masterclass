@@ -1,0 +1,11 @@
+<div class="flex-container full-width" style="border-bottom: 1px solid black;">
+  <p>{{'car - view works!' | modifyText }}</p>
+  <input [(ngModel)]="user.name" name="user-name">
+  {{user | json }}
+
+  <button type="button" class="btn-primary" (click)="sayHello()" > Click me!</button>
+</div>
+<div class="flex-container full-width">
+  <app-car-view-split [receivedUser]="user" (eventEmitter)="sayHello()"></app-car-view-split>
+</div>
+
